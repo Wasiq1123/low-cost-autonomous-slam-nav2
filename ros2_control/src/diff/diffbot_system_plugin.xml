@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<library path="diffbot_system">
+  <class name="diff/DiffBotSystemHardware"
+         type="diff::DiffBotSystemHardware"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      DiffBot differential drive hardware interface for ESP32 via serial port.
+    </description>
+  </class>
+</library>

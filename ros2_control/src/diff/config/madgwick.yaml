@@ -1,0 +1,18 @@
+imu_filter_madgwick:
+  ros__parameters:
+    use_mag: false                  # MUST BE FALSE: ESP32 does not send magnetometer data
+    use_magnetic_field_msg: false   
+    world_frame: "enu"             
+    fixed_frame: "odom"            
+    publish_tf: false
+    reverse_tf: false
+
+    gain: 0.05                     
+    zeta: 0.001                    
+
+    orientation_stddev: 0.05       
+
+    constant_dt: 0.0               
+    publish_debug_topics: false
+    stateless: false
+    remove_gravity_vector: false   

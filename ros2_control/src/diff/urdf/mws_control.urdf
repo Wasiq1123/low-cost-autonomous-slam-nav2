@@ -1,0 +1,331 @@
+<?xml version="1.0"?>
+<robot name="diff_robot">
+
+  <!-- LINKS -->
+  
+  <link name="base_footprint"/>
+  
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0250882236903466 0.000953465560338462 0.00211071359695861" rpy="0 0 0"/>
+      <mass value="0.224232914373367"/>
+      <inertia ixx="8.52101615238434E-05" ixy="1.20376556493932E-10" ixz="-4.82305160363843E-08"
+               iyy="0.000186846419646164" iyz="1.49133323664977E-09" izz="0.000263851460659969"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/base_link.STL"/>
+      </geometry>
+      <material name=""><color rgba="1 1 1 0.3"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/base_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+  
+  <joint name="base_joint" type="fixed">
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <link name="left_wheel">
+    <inertial>
+      <origin xyz="2.2713950512121E-09 -0.00737294168874164 3.24453068162311E-08" rpy="0 0 0"/>
+      <mass value="0.0214042198434813"/>
+      <inertia ixx="8.62831877556858E-06" ixy="3.1432092626266E-13" ixz="3.380169358896E-12"
+               iyy="1.45151853032996E-05" iyz="9.89545641944015E-12" izz="8.62688078965556E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/left_wheel.STL"/>
+      </geometry>
+      <material name=""><color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/left_wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="right_wheel">
+    <inertial>
+      <origin xyz="2.27139084624239E-09 0.00737294168874025 -3.24453075274678E-08" rpy="0 0 0"/>
+      <mass value="0.021404219843482"/>
+      <inertia ixx="8.6283187755688E-06" ixy="-3.14321078704685E-13" ixz="-3.38016933684573E-12"
+               iyy="1.45151853033001E-05" iyz="9.89545644204583E-12" izz="8.62688078965569E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/right_wheel.STL"/>
+      </geometry>
+      <material name=""><color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/right_wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="caster_base">
+    <inertial>
+      <origin xyz="0.00768675231632608 0.000244262979915968 -0.0135056190368977" rpy="0 0 0"/>
+      <mass value="0.013785987103457"/>
+      <inertia ixx="1.24681548692383E-06" ixy="-9.77267564489183E-10" ixz="2.48052318082806E-07"
+               iyy="1.31311527520126E-06" iyz="2.45566862776681E-09" izz="1.69767036915031E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/caster_base.STL"/>
+      </geometry>
+      <material name=""><color rgba="0.63921568627451 0.666666666666667 0.67843137254902 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/caster_base.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="caster_wheel">
+    <inertial>
+      <origin xyz="2.6203914038625E-11 -2.77710349161353E-09 3.92741394961149E-15" rpy="0 0 0"/>
+      <mass value="0.00828739992319077"/>
+      <inertia ixx="6.39299912774581E-07" ixy="-3.50834634007095E-09" ixz="-2.59211621144938E-22"
+               iyy="1.01108533248037E-06" iyz="2.62015600934136E-21" izz="6.39266809275766E-07"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/caster_wheel.STL"/>
+      </geometry>
+      <material name=""><color rgba="1 1 1 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/caster_wheel.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="imu">
+    <inertial>
+      <origin xyz="0.000875561271672268 -0.00397374721096586 0.0018872176529732" rpy="0 0 0"/>
+      <mass value="0.0121980803593773"/>
+      <inertia ixx="2.50456407006983E-06" ixy="-1.64670259452035E-08" ixz="2.2104850828625E-10"
+               iyy="1.43407356982455E-06" iyz="2.09083225281697E-09" izz="3.85933561903738E-06"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/imu_link.STL"/>
+      </geometry>
+      <material name=""><color rgba="0.752941176470588 0.752941176470588 0.752941176470588 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/imu_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="camera">
+    <inertial>
+      <origin xyz="0 -3.46944695195361E-18 -0.0015" rpy="0 0 0"/>
+      <mass value="5.74739973360874E-05"/>
+      <inertia ixx="1.24953653370908E-10" ixy="4.38038647849298E-26" ixz="-1.09686473395111E-27"
+               iyy="1.45971465805982E-10" iyz="1.38362319977152E-27" izz="1.84714123172759E-10"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/lidar_link.STL"/>
+      </geometry>
+      <material name=""><color rgba="0.792156862745098 0.819607843137255 0.933333333333333 1"/></material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///home/wasiq/testing_model/projects/basic/src/megabot/meshes/lidar_link.STL"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+  <!-- JOINTS-->
+
+  <joint name="left_wheel_joint" type="continuous">
+    <origin xyz="-0.0332586915199699 0.0757499999999965 -0.01375" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="right_wheel_joint" type="continuous">
+    <origin xyz="-0.0332586915199645 -0.0757500000000034 -0.01375" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <joint name="caster_base_joint" type="fixed">
+    <origin xyz="0.0725813084800312 0 -0.00250000000000452" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="caster_base"/>
+  </joint>
+
+  <joint name="caster_wheel_joint" type="fixed">
+    <origin xyz="0.0150142056791566 0.000141668664297871 -0.0229601469749999" rpy="0 0 0"/>
+    <parent link="caster_base"/>
+    <child link="caster_wheel"/>
+  </joint>
+
+
+  <joint name="imu_joint" type="fixed">
+    <origin xyz="0.0160189731074984 -0.000566785244423417 0.00164999999999996" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="imu"/>
+  </joint>
+
+  <joint name="camera5_joint" type="fixed">
+      <origin xyz="0.0940762729592092 0 0.3" rpy="0 -0.107799 -1.5708"/>
+      <parent link="base_link"/>
+      <child link="camera"/>
+  </joint>
+
+  <link name="camera_link"/>
+
+  <joint name="camera_joint" type="fixed">
+    <parent link="camera"/>
+    <child link="camera_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ROS2_CONTROL-->
+  
+  <ros2_control name="DiffBotSystem" type="system">
+    <hardware>
+      <plugin>diff/DiffBotSystemHardware</plugin>
+      <param name="esp32_ip">192.168.43.55</param>
+      <param name="esp32_port">80</param>
+      <param name="wheel_radius">0.033</param>
+      <param name="wheel_separation">0.128</param>
+      <param name="ticks_per_rev">20</param>
+    </hardware>
+    
+    <joint name="left_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+    
+    <joint name="right_wheel_joint">
+      <command_interface name="velocity"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <sensor name="imu_sensor">
+      <state_interface name="orientation.x"/>
+      <state_interface name="orientation.y"/>
+      <state_interface name="orientation.z"/>
+      <state_interface name="orientation.w"/>
+      <state_interface name="angular_velocity.x"/>
+      <state_interface name="angular_velocity.y"/>
+      <state_interface name="angular_velocity.z"/>
+      <state_interface name="linear_acceleration.x"/>
+      <state_interface name="linear_acceleration.y"/>
+      <state_interface name="linear_acceleration.z"/>
+    </sensor>
+  </ros2_control>
+  <!--GAZEBO PLUGINS (for simulation) -->
+  <!-- Diff drive plugin for Gazebo physics (simulation mode only) -->
+
+  <gazebo>
+    <plugin filename="gz-sim-diff-drive-system" name="gz::sim::systems::DiffDrive">
+      <left_joint>left_wheel_joint</left_joint>
+      <right_joint>right_wheel_joint</right_joint>
+      <wheel_separation>0.1515</wheel_separation>
+      <wheel_radius>0.0332586915</wheel_radius>
+      <odom_publisher_frequency>50</odom_publisher_frequency>
+      <topic>cmd_vel</topic>
+      <odom_topic>odom</odom_topic>
+      <frame_id>odom</frame_id>
+      <child_frame_id>base_footprint</child_frame_id>
+      <publish_odom>true</publish_odom>
+      <publish_odom_tf>true</publish_odom_tf>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="camera">
+    <sensor type="gpu_lidar" name="lidar">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>30</update_rate>
+      <lidar>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.14159</min_angle>
+            <max_angle>3.14159</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.2</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </lidar>
+      <topic>scan</topic>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="camera_link">
+    <sensor type="rgbd_camera" name="camera">
+      <topic>camera</topic>
+      <update_rate>30.0</update_rate>
+      <always_on>true</always_on>
+      <visualize>true</visualize>
+      <camera>
+        <optical_frame_id>camera_link</optical_frame_id>
+        <horizontal_fov>1.50098</horizontal_fov>
+        <image>
+          <width>640</width>
+          <height>480</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.3</near>
+          <far>100</far>
+        </clip>
+      </camera>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="imu">
+    <sensor type="imu" name="imu_sensor">
+      <always_on>true</always_on>
+      <update_rate>30</update_rate>
+      <visualize>true</visualize>
+      <topic>imu/data</topic>
+    </sensor>
+  </gazebo>
+
+</robot>
