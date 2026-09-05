@@ -192,13 +192,3 @@ ros2 launch megabot_nav navigation.launch.py use_sim_time:=false
 ## License
 
 Apache-2.0 — for the original packages (`depth`, `megabot_nav`, `diff`, the ESP32 firmware), matching the license already used across every other repo in this project (fine-tuning, quantization, eval toolkit, dataset tools, both ROS depth packages), so the whole body of work is licensed consistently. Vendored packages retain their original upstream licenses.
-
-## Repo name, description, and tags
-
-**Name:** `low-cost-autonomous-slam-nav2`
-
-**Description:** "Autonomous mapping and navigation without an RGB-D camera or a Raspberry Pi — a phone camera and a fine-tuned monocular depth model replace the depth sensor, a $5 ESP32 over WiFi replaces onboard compute, full RTAB-Map SLAM and Nav2 running on a laptop."
-
-**Tags:** `ros2` `slam` `nav2` `rtabmap` `ros2-control` `depth-estimation` `monocular-depth` `esp32` `openvino` `low-cost-robotics` `autonomous-navigation` `robotics`
-
-This is the name I'd lead with for a scholarship committee — it states the actual contribution (cost reduction via architecture, not a compromise) in the title itself, rather than describing it as "yet another SLAM robot." Everything a reviewer needs to understand why this project is interesting is visible before they even open the README.
