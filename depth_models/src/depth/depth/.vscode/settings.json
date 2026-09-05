@@ -1,0 +1,18 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/wasiq/testing_model/depth_models/install/depth_anything_v2_ros2/lib/python3.10/site-packages",
+        "/home/wasiq/testing_model/depth_models/install/depth/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "",
+        "/home/wasiq/testing_model/depth_models/src/depth/depth/Depth-Anything-V2"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/wasiq/testing_model/depth_models/install/depth_anything_v2_ros2/lib/python3.10/site-packages",
+        "/home/wasiq/testing_model/depth_models/install/depth/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages",
+        "",
+        "/home/wasiq/testing_model/depth_models/src/depth/depth/Depth-Anything-V2"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/wasiq/testing_model/my_team/install/teleop_twist_keyboard/lib/python3.10/site-packages",
+        "/home/wasiq/testing_model/my_team/install/robot_localization/local/lib/python3.10/dist-packages",
+        "/home/wasiq/testing_model/my_team/install/geodesy/local/lib/python3.10/dist-packages",
+        "/home/wasiq/testing_model/my_team/install/geographic_msgs/local/lib/python3.10/dist-packages",
+        "/home/wasiq/testing_model/my_team/install/detection/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/wasiq/testing_model/my_team/install/teleop_twist_keyboard/lib/python3.10/site-packages",
+        "/home/wasiq/testing_model/my_team/install/robot_localization/local/lib/python3.10/dist-packages",
+        "/home/wasiq/testing_model/my_team/install/geodesy/local/lib/python3.10/dist-packages",
+        "/home/wasiq/testing_model/my_team/install/geographic_msgs/local/lib/python3.10/dist-packages",
+        "/home/wasiq/testing_model/my_team/install/detection/lib/python3.10/site-packages",
+        "/opt/ros/humble/lib/python3.10/site-packages",
+        "/opt/ros/humble/local/lib/python3.10/dist-packages"
+    ]
+}

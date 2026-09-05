@@ -1,0 +1,1 @@
+controller_manager:diff_drive_controller:hardware_interface:libserial:pluginlib:rclcpp:robot_state_publisher:serial

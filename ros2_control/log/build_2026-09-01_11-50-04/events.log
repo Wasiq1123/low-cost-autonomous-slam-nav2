@@ -1,0 +1,11 @@
+[0.000000] (-) TimerEvent: {}
+[0.000187] (-) JobUnselected: {'identifier': 'asio_cmake_module'}
+[0.000257] (-) JobUnselected: {'identifier': 'io_context'}
+[0.000275] (-) JobUnselected: {'identifier': 'serial'}
+[0.000291] (-) JobUnselected: {'identifier': 'serial_driver'}
+[0.000321] (-) JobUnselected: {'identifier': 'serial_ros2'}
+[0.000335] (-) JobUnselected: {'identifier': 'udp_driver'}
+[0.000351] (diff) JobQueued: {'identifier': 'diff', 'dependencies': OrderedDict([('serial', '/home/wasiq/Downloads/github/ros2_control/install/serial')])}
+[0.000370] (diff) JobStarted: {'identifier': 'diff'}
+[0.012496] (diff) JobEnded: {'identifier': 'diff', 'rc': 1}
+[0.023686] (-) EventReactorShutdown: {}

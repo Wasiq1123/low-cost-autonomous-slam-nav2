@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/wasiq/Videos/my_project/install/openslam_gmapping/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/wasiq/Videos/my_project/src/megabot/include/**",
+        "/home/wasiq/Videos/my_project/src/megabot_nav/include/**",
+        "/home/wasiq/Videos/my_project/src/megabot_slam/include/**",
+        "/home/wasiq/Videos/my_project/src/slam_gmapping/openslam_gmapping/include/**",
+        "/home/wasiq/Videos/my_project/src/slam_gmapping/slam_gmapping/include/**",
+        "include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

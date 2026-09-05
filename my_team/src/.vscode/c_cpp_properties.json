@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/wasiq/testing_model/my_team/install/robot_localization/include/**",
+        "/home/wasiq/testing_model/my_team/install/openslam_gmapping/include/**",
+        "/home/wasiq/testing_model/my_team/install/geodesy/include/**",
+        "/home/wasiq/testing_model/my_team/install/geographic_msgs/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/wasiq/testing_model/my_team/src/geographic_info/geodesy/include/**",
+        "/home/wasiq/testing_model/my_team/src/megabot/include/**",
+        "/home/wasiq/testing_model/my_team/src/megabot_nav/include/**",
+        "/home/wasiq/testing_model/my_team/src/megabot_slam/include/**",
+        "/home/wasiq/testing_model/my_team/src/robot_localization/include/**",
+        "/home/wasiq/testing_model/my_team/src/slam_gmapping/openslam_gmapping/include/**",
+        "/home/wasiq/testing_model/my_team/src/slam_gmapping/slam_gmapping/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
