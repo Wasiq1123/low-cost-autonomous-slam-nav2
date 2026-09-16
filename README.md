@@ -178,12 +178,12 @@ ros2 launch megabot_nav navigation.launch.py use_sim_time:=false
 
 ## Related repos
 
-- **Depth model fine-tuning**: [depth-estimation-finetuning-yolo26-dav2](#) — trains the checkpoint `new_rtabmap_depth.py` runs
-- **Deployment optimization**: [depth-estimation-openvino-quantization](#) — the OpenVINO conversion this pipeline depends on
-- **Offline evaluation**: [depth-estimation-eval-toolkit](#) — how the depth checkpoint's accuracy was benchmarked before deployment here
-- **Dataset capture**: [realsense-lab-dataset-tools](#) — `measure_depth_scale.py` is the tool for calibrating `scale_factor` above
-- **ROS 2 depth packages**: [Fine-Tuned-Depth-Estimation-for-ROS-2](#), [Multi-Model-Monocular-Depth-Estimation-for-ROS-2](#)
-- **Nav2/SLAM reference work**: `WheelChair_Slam`, `my_team` (ALIF racer) — earlier projects this one's `megabot_nav`/`bt_ros2` structure builds on
+* Depth model fine-tuning: [depth-estimation-finetuning-yolo26-dav2](https://github.com/Wasiq1123/depth-estimation-finetuning-yolo26-dav2) — trains the checkpoint `new_rtabmap_depth.py` runs
+* Deployment optimization: [depth-estimation-openvino-quantization](https://github.com/Wasiq1123/depth-estimation-openvino-quantization) — the OpenVINO conversion this pipeline depends on
+* Offline evaluation: [depth-estimation-eval-toolkit](https://github.com/Wasiq1123/depth-estimation-eval-toolkit) — how the depth checkpoint's accuracy was benchmarked before deployment here
+* Dataset capture: [realsense-lab-dataset-tools](https://github.com/Wasiq1123/realsense-lab-dataset-tools) — `measure_depth_scale.py` is the tool for calibrating `scale_factor` above
+* ROS 2 depth packages: [Fine-Tuned-Depth-Estimation-for-ROS-2](https://github.com/Wasiq1123/Fine-Tuned-Depth-Estimation-for-ROS-2), [Multi-Model-Monocular-Depth-Estimation-for-ROS-2](https://github.com/Wasiq1123/Multi-Model-Monocular-Depth-Estimation-for-ROS-2)
+* Nav2/SLAM reference work: [autonomous-wheelchair-slam-nav2](https://github.com/Wasiq1123/autonomous-wheelchair-slam-nav2), [alif-racer-ros2-nav2-slam](https://github.com/Wasiq1123/alif-racer-ros2-nav2-slam) — earlier projects this one's `megabot_nav`/`bt_ros2` structure builds on
 
 ## Acknowledgments
 
