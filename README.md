@@ -174,6 +174,8 @@ ros2 launch megabot_nav navigation.launch.py use_sim_time:=false
   ```
 - **`scale_factor = 1.0`** in the same file is a placeholder. `measure_depth_scale.py` from [realsense-lab-dataset-tools](#related-repos) is built for exactly this — run it against the live `/camera/depth/image_raw` topic and update `scale_factor` before trusting absolute distances from this pipeline.
 
+---
+
 ## Related repos
 
 * Depth model fine-tuning: [depth-estimation-finetuning-yolo26-dav2](https://github.com/Wasiq1123/depth-estimation-finetuning-yolo26-dav2) — trains the checkpoint `new_rtabmap_depth.py` runs
