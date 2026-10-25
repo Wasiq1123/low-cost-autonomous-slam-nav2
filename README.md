@@ -58,11 +58,11 @@ Everything left of the ESP32 box runs on your laptop. The robot itself is just w
 
 ## Hardware Design and Low-Cost Engineering
 
-![Physical robot prototype, front three-quarter view](images/robot-front-view.png)
+![Physical robot prototype, front three-quarter view](robot-front-view.png)
 
 *Physical prototype showing the smartphone mount, two-tier chassis, drive wheel, and caster wheel.*
 
-![Physical robot prototype, top view](images/robot-top-view.png)
+![Physical robot prototype, top view](robot-top-view.png)
 
 *Top view showing the motor-driver modules, controller electronics, wiring, and smartphone mounting arrangement.*
 
